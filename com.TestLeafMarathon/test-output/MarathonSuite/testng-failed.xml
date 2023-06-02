@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MarathonSuite]">
+  <test thread-count="5" name="Marathontest(failed)">
+    <classes>
+      <class name="marathonTestCase.AbhiBusBuyTicketTestCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="AbhiBusTicketProcess"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- marathonTestCase.AbhiBusBuyTicketTestCase -->
+    </classes>
+  </test> <!-- Marathontest(failed) -->
+</suite> <!-- Failed suite [MarathonSuite] -->

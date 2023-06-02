@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AbhiBusSuite]">
+  <test thread-count="5" name="AbhiBustest(failed)">
+    <classes>
+      <class name="marathonTestCase.AbhiBusBuyTicketTestCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="AbhiBusTicketProcess"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- marathonTestCase.AbhiBusBuyTicketTestCase -->
+      <class name="marathonTestCase.PVRCinemasTestCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="pvrticket"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- marathonTestCase.PVRCinemasTestCase -->
+      <class name="marathonTestCase.AmazonTestCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="amazonTest"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- marathonTestCase.AmazonTestCase -->
+    </classes>
+  </test> <!-- AbhiBustest(failed) -->
+</suite> <!-- Failed suite [AbhiBusSuite] -->
