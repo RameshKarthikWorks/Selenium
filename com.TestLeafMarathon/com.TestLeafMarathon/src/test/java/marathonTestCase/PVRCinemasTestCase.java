@@ -10,15 +10,16 @@ import ObjectsPackage.PvrObjects;
 import mainClassPackage.BaseClass;
 
 public class PVRCinemasTestCase extends BaseClass {
-
 	
-@Test(priority = 3)
-	public void pvrticket() throws InterruptedException
+	
+	@Test(priority = 3)
+	public void  PvrTicket() throws InterruptedException
 	{
-		PageFactory.initElements(driver, PvrObjects.class);
-		
-		ticketprocesss();
+		PageFactory.initElements(driver,PvrObjects.class);
+		 ticketprocesss() ;
+		 
 	}
+	
 	
 	
 	public void ticketprocesss() throws InterruptedException
@@ -83,21 +84,24 @@ public class PVRCinemasTestCase extends BaseClass {
 		
 		// Due to getting Calls from PVR Team so comment the send Request.
 //		PvrObjects.sendRequest.click();
-//		
+	//	
 //		Thread.sleep(5000);
-//		
+	//	
 //		String text = PvrObjects.Success.getText();
-//		
+	//	
 //		System.out.println(text);
-//		
+	//	
 //		PvrObjects.CancelButton.click();
-//		
+	//	
 		
 		String title = driver.getTitle();
 		
 		System.out.println("The title of the page is "+ " "+title);
 		
+	}
 
 		
 	}
-}
+	
+
+

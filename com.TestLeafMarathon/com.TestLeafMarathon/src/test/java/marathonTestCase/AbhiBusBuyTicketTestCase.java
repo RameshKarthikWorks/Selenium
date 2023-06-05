@@ -13,7 +13,7 @@ import mainClassPackage.BaseClass;
 public class AbhiBusBuyTicketTestCase extends BaseClass{
 	
 	
-	@Test(priority = 1)
+	@Test(priority = 3)
 	public void AbhiBusTicketProcess() throws InterruptedException
 	{
 		 BuyTicket();
@@ -74,11 +74,11 @@ public class AbhiBusBuyTicketTestCase extends BaseClass{
 		
 		Thread.sleep(5000);
 		
-		boarding.selectByVisibleText("Sirsuri-20:41");
+		boarding.selectByIndex(3);
 		
 		Select dropping = new Select(AbhiBusObjects.droppingPoint);
 		
-		dropping.selectByVisibleText("Attibele Toll Gate-04:01");
+		dropping.selectByIndex(4);
 		
 		String title = driver.getTitle();
 		

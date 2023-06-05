@@ -6,7 +6,7 @@
       <class name="marathonTestCase.PVRCinemasTestCase">
         <methods>
           <include name="tearDown"/>
-          <include name="pvrticket"/>
+          <include name="PvrTicket"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- marathonTestCase.PVRCinemasTestCase -->

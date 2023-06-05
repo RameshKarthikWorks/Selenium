@@ -1,11 +1,13 @@
 package ObjectsPackage;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class PvrObjects {
 	
-	
+	public static WebDriver driver;
+
 	@FindBy(xpath="//div[contains(text(),'Movie Library ')]")
 	public static WebElement movieLibrary;
 	
@@ -68,11 +70,6 @@ public class PvrObjects {
 	
 	@FindBy(xpath="(//button[text()='CANCEL'])[2]")
 	public static WebElement CancelButton;
-	
-	
-	
-	
-	
 	
 
 }
