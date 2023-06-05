@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-MarathonSuite" class="navigator-link">
-              <span class="suite-name border-skipped">MarathonSuite</span>
+              <span class="suite-name border-passed">MarathonSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-MarathonSuite" class="navigator-link ">
-                    <span>C:\Users\ADMIN\eclipse-workspace\com.TestLeafMarathon\TestCase.xml</span>
+                    <span>C:\Users\ADMIN\git\Selenium\com.TestLeafMarathon\com.TestLeafMarathon\TestCase.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-MarathonSuite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-MarathonSuite" class="hide-methods skipped suite-MarathonSuite"> (hide)</a> <!-- hide-methods skipped suite-MarathonSuite -->
-                      <a href="#" panel-name="suite-MarathonSuite" class="show-methods skipped suite-MarathonSuite"> (show)</a> <!-- show-methods skipped suite-MarathonSuite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MarathonSuite" class="hide-methods passed suite-MarathonSuite"> (hide)</a> <!-- hide-methods passed suite-MarathonSuite -->
+                      <a href="#" panel-name="suite-MarathonSuite" class="show-methods passed suite-MarathonSuite"> (show)</a> <!-- show-methods passed suite-MarathonSuite -->
                     </span>
-                    <div class="method-list-content skipped suite-MarathonSuite">
+                    <div class="method-list-content passed suite-MarathonSuite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-MarathonSuite" title="marathonTestCase.AbhiBusBuyTicketTestCase" class="method navigator-link" hash-for-method="AbhiBusTicketProcess">AbhiBusTicketProcess</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-MarathonSuite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MarathonSuite" title="marathonTestCase.AmazonTestCase" class="method navigator-link" hash-for-method="amazonTest">amazonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MarathonSuite" title="marathonTestCase.PVRCinemasTestCase" class="method navigator-link" hash-for-method="pvrticket">pvrticket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MarathonSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,9 +129,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MarathonSuite" class="panel MarathonSuite">
-          <div class="suite-MarathonSuite-class-skipped">
+          <div class="suite-MarathonSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
+              <span class="class-name">marathonTestCase.PVRCinemasTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="pvrticket">
+                  </a> <!-- pvrticket -->
+                  <span class="method-name">pvrticket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MarathonSuite-class-passed -->
+          <div class="suite-MarathonSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">marathonTestCase.AbhiBusBuyTicketTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -130,46 +155,50 @@
                   <a name="AbhiBusTicketProcess">
                   </a> <!-- AbhiBusTicketProcess -->
                   <span class="method-name">AbhiBusTicketProcess</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidArgumentException: invalid argument
-  (Session info: chrome=114.0.5735.91)
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0957d6787728e8a4628c604a4ef14089, get {url=&quot;https://www.abhibus.com/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Abhibus_Brand&amp;utm_term=abhibus&amp;utm_content=Brand&amp;gclid=CjwKCAjwg-GjBhBnEiwAMUvNWxSiYd0h3KtbM8nKqCNEiznqpgXr9pmZlThzO8Yc3QSAUwgqSxPv4xoCNF4QAvD_BwE}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.91, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53298/devtoo..., se:cdpVersion: 114.0.5735.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0957d6787728e8a4628c604a4ef14089
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-	at mainClassPackage.BaseClass.launchBrowser(BaseClass.java:41)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MarathonSuite-class-skipped -->
+          </div> <!-- suite-MarathonSuite-class-passed -->
+          <div class="suite-MarathonSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">marathonTestCase.AmazonTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="amazonTest">
+                  </a> <!-- amazonTest -->
+                  <span class="method-name">amazonTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MarathonSuite-class-passed -->
         </div> <!-- panel MarathonSuite -->
         <div panel-name="test-xml-MarathonSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ADMIN\eclipse-workspace\com.TestLeafMarathon\TestCase.xml</span>
+            <span class="header-content">C:\Users\ADMIN\git\Selenium\com.TestLeafMarathon\com.TestLeafMarathon\TestCase.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;MarathonSuite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Marathontest&quot;&gt;
+&lt;suite name=&quot;MarathonSuite&quot; verbose=&quot;2&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Marathontest&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;marathonTestCase.AbhiBusBuyTicketTestCase&quot;/&gt;
-      &lt;class name=&quot;marathonTestCase.AmazonTestCase&quot;/&gt;
-      &lt;class name=&quot;marathonTestCase.PVRCinemasTestCase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Marathontest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Amazontest&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;marathonTestCase.AmazonTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Amazontest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;PVRTest&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;marathonTestCase.PVRCinemasTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PVRTest --&gt;
 &lt;/suite&gt; &lt;!-- MarathonSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -181,7 +210,13 @@ Session ID: 0957d6787728e8a4628c604a4ef14089
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Marathontest (3 classes)</span>
+                <span class="test-name">Marathontest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Amazontest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PVRTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -207,16 +242,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AbhiBusTicketProcess')
-data.setCell(0, 2, 'marathonTestCase.AbhiBusBuyTicketTestCase')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'amazonTest')
+data.setCell(0, 2, 'marathonTestCase.AmazonTestCase')
+data.setCell(0, 3, 35737);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'pvrticket')
+data.setCell(1, 2, 'marathonTestCase.PVRCinemasTestCase')
+data.setCell(1, 3, 22227);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'AbhiBusTicketProcess')
+data.setCell(2, 2, 'marathonTestCase.AbhiBusBuyTicketTestCase')
+data.setCell(2, 3, 15664);
 window.suiteTableData['MarathonSuite']= { tableData: data, tableDiv: 'times-div-MarathonSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-MarathonSuite">
               </div> <!-- times-div-MarathonSuite -->
             </div> <!-- times-div -->
@@ -231,31 +274,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-MarathonSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">marathonTestCase.PVRCinemasTestCase</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">pvrticket</span>
-                <br/>
-                <span class="ignored-method-name">launchBrowser</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">marathonTestCase.AmazonTestCase</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">amazonTest</span>
-                <br/>
-                <span class="ignored-method-name">launchBrowser</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-MarathonSuite" class="panel">
@@ -264,21 +285,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">marathonTestCase.AbhiBusBuyTicketTestCase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">marathonTestCase.PVRCinemasTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">launchBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">marathonTestCase.AbhiBusBuyTicketTestCase</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">AbhiBusTicketProcess</span>
-                <span class="method-start">4544 ms</span>
+                <span class="method-start">8557 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">marathonTestCase.AmazonTestCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">amazonTest</span>
+                <span class="method-start">24259 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">marathonTestCase.PVRCinemasTestCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">pvrticket</span>
+                <span class="method-start">60006 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4562 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">82244 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

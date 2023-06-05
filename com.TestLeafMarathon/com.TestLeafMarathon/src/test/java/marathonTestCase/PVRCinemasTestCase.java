@@ -12,7 +12,7 @@ import mainClassPackage.BaseClass;
 public class PVRCinemasTestCase extends BaseClass {
 
 	
-	@Test(priority=3,enabled = false)
+@Test(priority = 3)
 	public void pvrticket() throws InterruptedException
 	{
 		PageFactory.initElements(driver, PvrObjects.class);
@@ -24,13 +24,16 @@ public class PVRCinemasTestCase extends BaseClass {
 	public void ticketprocesss() throws InterruptedException
 	{
 		
+		Thread.sleep(5000);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		PvrObjects.movieLibrary.click();
 		
+		Thread.sleep(5000);
+		
 		Select city = new Select(PvrObjects.city);
 		
-		city.selectByValue("Chennai");
+		city.selectByVisibleText("Chennai");
 		
 		Thread.sleep(3000);
 		
@@ -78,16 +81,17 @@ public class PVRCinemasTestCase extends BaseClass {
 		
 		PvrObjects.CopySelf.click();
 		
-		PvrObjects.sendRequest.click();
-		
-		Thread.sleep(5000);
-		
-		String text = PvrObjects.Success.getText();
-		
-		System.out.println(text);
-		
-		PvrObjects.CancelButton.click();
-		
+		// Due to getting Calls from PVR Team so comment the send Request.
+//		PvrObjects.sendRequest.click();
+//		
+//		Thread.sleep(5000);
+//		
+//		String text = PvrObjects.Success.getText();
+//		
+//		System.out.println(text);
+//		
+//		PvrObjects.CancelButton.click();
+//		
 		
 		String title = driver.getTitle();
 		

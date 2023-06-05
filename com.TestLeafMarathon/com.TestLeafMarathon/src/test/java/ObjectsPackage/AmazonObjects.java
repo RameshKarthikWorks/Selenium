@@ -1,9 +1,19 @@
 package ObjectsPackage;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-public class AmazonObjects {
+import marathonTestCase.AmazonTestCase;
+
+public class AmazonObjects extends AmazonTestCase {
+	
+	
+	public AmazonObjects(WebDriver driver)
+	{
+		PageFactory.initElements(driver,AmazonTestCase.class);
+	}
 	
 	
 	@FindBy(xpath="//input[@name='field-keywords']")
@@ -24,14 +34,16 @@ public class AmazonObjects {
 	@FindBy(xpath="//div[@id='brandsRefinements']/ul/span/li/span/a/span[contains(text(),'Skybags')]")
 	public static WebElement SecondBrand;
 	
-	@FindBy(xpath="(//a[contains(@class,'a-link-normal s-underline-text')]//span)[2]")
+	@FindBy(xpath="((//a[contains(@class,'a-link-normal s-underline-text')]//span)[2]/following::span)[8]")
 	public static WebElement titleofFirstProduct;
 	
-	@FindBy(xpath="//div[@id='brandsRefinements']/preceding::span[text()='834'][2]")
+	@FindBy(xpath="(//a[contains(@class,'a-link-normal s-underline-text')]//span)[2]/following::span[21]")
 	public static WebElement Discountprice;
 	
-	@FindBy(xpath="(//div[@class='a-row']/following-sibling::div)[3]/preceding::span[text()='₹1,899'][1]")
+	@FindBy(xpath="(//a[contains(@class,'a-link-normal s-underline-text')]//span)[2]/following::span[15]")
 	public static WebElement actualPrice;
+	
+	
 	
 
 

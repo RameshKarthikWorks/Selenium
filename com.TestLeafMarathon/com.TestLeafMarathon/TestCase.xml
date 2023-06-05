@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="MarathonSuite">
+<suite name="MarathonSuite" parallel="false" preserve-order="true" verbose="2" >
+
 <test name="Marathontest">
 <classes name="Marathonclasses">
 <class name="marathonTestCase.AbhiBusBuyTicketTestCase"></class>
+</classes>
+</test>
+
+<test name="Amazontest">
+<classes name="AmazonTestClasses">
 <class name="marathonTestCase.AmazonTestCase"></class>
+</classes>
+</test>
+
+<test name="PVRTest">
+<classes name="PVRTestClasses">
 <class name="marathonTestCase.PVRCinemasTestCase"></class>
 </classes>
 </test>
+
 </suite>

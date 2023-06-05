@@ -11,7 +11,7 @@ import mainClassPackage.BaseClass;
 
 public class AmazonTestCase extends BaseClass {
 
-	@Test(priority = 2,enabled = false)
+	@Test(priority = 2)
 	public void amazonTest() throws InterruptedException {
 
 		PageFactory.initElements(driver, AmazonObjects.class);
@@ -62,6 +62,8 @@ public class AmazonTestCase extends BaseClass {
 		String title = driver.getTitle();
 
 		System.out.println(title);
+		
+		driver.get(properties.getProperty("url3"));
 
 	}
 

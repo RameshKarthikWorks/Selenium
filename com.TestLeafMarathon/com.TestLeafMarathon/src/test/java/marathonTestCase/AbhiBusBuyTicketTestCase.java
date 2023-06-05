@@ -2,6 +2,7 @@ package marathonTestCase;
 
 import java.time.Duration;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
@@ -12,15 +13,15 @@ import mainClassPackage.BaseClass;
 public class AbhiBusBuyTicketTestCase extends BaseClass{
 	
 	
-	@Test(priority=1,enabled = true)
-	public void AbhiBusTicketProcess()
+	@Test(priority = 1)
+	public void AbhiBusTicketProcess() throws InterruptedException
 	{
 		 BuyTicket();
 		
 	}
 	
 	
-	public void BuyTicket()
+	public void BuyTicket() throws InterruptedException
 	{
 		
 		
@@ -66,17 +67,24 @@ public class AbhiBusBuyTicketTestCase extends BaseClass{
 		
 		System.out.println("The fare for the bus is"+" "+fare);
 		
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		
+		executor.executeScript("window.scrollBy(0,350)", "");		
 		Select boarding = new Select(AbhiBusObjects.boardingPoint);
 		
-		boarding.selectByVisibleText("Egmore Parveen Travels (Van/Bus)-15:15");
+		Thread.sleep(5000);
+		
+		boarding.selectByVisibleText("Sirsuri-20:41");
 		
 		Select dropping = new Select(AbhiBusObjects.droppingPoint);
 		
-		dropping.selectByVisibleText("Electronic City Tollgate-22:05");
+		dropping.selectByVisibleText("Attibele Toll Gate-04:01");
 		
 		String title = driver.getTitle();
 		
 		System.out.println(title);
+		
+		driver.get(properties.getProperty("url2"));
 		
 
 	}
