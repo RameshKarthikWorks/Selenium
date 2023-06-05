@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MarathonSuite">
+<test name="Marathontest">
+<classes name="Marathonclasses">
+<class name="marathonTestCase.AbhiBusBuyTicketTestCase"></class>
+<class name="marathonTestCase.AmazonTestCase"></class>
+<class name="marathonTestCase.PVRCinemasTestCase"></class>
+</classes>
+</test>
+</suite>
