@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-05T21:33:16 IST" name="MarathonSuite" finished-at="2023-06-05T21:34:29 IST" duration-ms="73041">
+  <suite started-at="2023-06-06T09:22:27 IST" name="MarathonSuite" finished-at="2023-06-06T09:23:45 IST" duration-ms="78069">
     <groups>
     </groups>
-    <test started-at="2023-06-05T21:33:16 IST" name="Marathontest" finished-at="2023-06-05T21:33:30 IST" duration-ms="14459">
+    <test started-at="2023-06-06T09:22:27 IST" name="Marathontest" finished-at="2023-06-06T09:22:44 IST" duration-ms="16851">
       <class name="marathonTestCase.AbhiBusBuyTicketTestCase">
-        <test-method signature="AbhiBusTicketProcess()[pri:3, instance:marathonTestCase.AbhiBusBuyTicketTestCase@52b1beb6]" started-at="2023-06-05T21:33:16 IST" name="AbhiBusTicketProcess" finished-at="2023-06-05T21:33:30 IST" duration-ms="14366" status="PASS">
+        <test-method signature="AbhiBusTicketProcess()[pri:1, instance:marathonTestCase.AbhiBusBuyTicketTestCase@534a5a98]" started-at="2023-06-06T09:22:27 IST" name="AbhiBusTicketProcess" finished-at="2023-06-06T09:22:44 IST" duration-ms="16804" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AbhiBusTicketProcess -->
       </class> <!-- marathonTestCase.AbhiBusBuyTicketTestCase -->
     </test> <!-- Marathontest -->
-    <test started-at="2023-06-05T21:33:30 IST" name="Amazontest" finished-at="2023-06-05T21:34:07 IST" duration-ms="36494">
+    <test started-at="2023-06-06T09:22:44 IST" name="Amazontest" finished-at="2023-06-06T09:23:22 IST" duration-ms="38428">
       <class name="marathonTestCase.AmazonTestCase">
-        <test-method signature="amazonTest()[pri:2, instance:marathonTestCase.AmazonTestCase@5ab956d7]" started-at="2023-06-05T21:33:30 IST" name="amazonTest" finished-at="2023-06-05T21:34:07 IST" duration-ms="36489" status="PASS">
+        <test-method signature="amazonTest()[pri:2, instance:marathonTestCase.AmazonTestCase@7526515b]" started-at="2023-06-06T09:22:44 IST" name="amazonTest" finished-at="2023-06-06T09:23:22 IST" duration-ms="38425" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazonTest -->
       </class> <!-- marathonTestCase.AmazonTestCase -->
     </test> <!-- Amazontest -->
-    <test started-at="2023-06-05T21:34:07 IST" name="PVRTest" finished-at="2023-06-05T21:34:29 IST" duration-ms="22049">
+    <test started-at="2023-06-06T09:23:22 IST" name="PVRTest" finished-at="2023-06-06T09:23:45 IST" duration-ms="22694">
       <class name="marathonTestCase.PVRCinemasTestCase">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:marathonTestCase.PVRCinemasTestCase@46cdf8bd]" started-at="2023-06-05T21:33:08 IST" name="launchBrowser" finished-at="2023-06-05T21:33:16 IST" duration-ms="7711" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:marathonTestCase.PVRCinemasTestCase@76a4ebf2]" started-at="2023-06-06T09:22:14 IST" name="launchBrowser" finished-at="2023-06-06T09:22:27 IST" duration-ms="13359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="PvrTicket()[pri:3, instance:marathonTestCase.PVRCinemasTestCase@46cdf8bd]" started-at="2023-06-05T21:34:07 IST" name="PvrTicket" finished-at="2023-06-05T21:34:29 IST" duration-ms="22046" status="PASS">
+        <test-method signature="PvrTicket()[pri:3, instance:marathonTestCase.PVRCinemasTestCase@76a4ebf2]" started-at="2023-06-06T09:23:22 IST" name="PvrTicket" finished-at="2023-06-06T09:23:45 IST" duration-ms="22683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PvrTicket -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:marathonTestCase.PVRCinemasTestCase@46cdf8bd]" started-at="2023-06-05T21:34:29 IST" name="tearDown" finished-at="2023-06-05T21:34:29 IST" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:marathonTestCase.PVRCinemasTestCase@76a4ebf2]" started-at="2023-06-06T09:23:45 IST" name="tearDown" finished-at="2023-06-06T09:23:45 IST" duration-ms="309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

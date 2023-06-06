@@ -3,6 +3,7 @@ package mainClassPackage;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.time.Duration;
 import java.util.Properties;
 
@@ -14,6 +15,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.configuration.ConfigMap;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.ExtentHtmlReporterConfiguration;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
@@ -22,8 +31,7 @@ public class BaseClass {
 	public static WebDriver driver;
 	
 	public static Properties properties;
-	
-	
+
 	public Properties config() throws IOException
 	{
 		properties = new Properties();
@@ -31,10 +39,14 @@ public class BaseClass {
 		properties.load(fileInputStream);
 		return properties;
 	}
+	
+
+
+	
 
 	@BeforeSuite
 	public void launchBrowser() throws IOException {
-		
+
 		config();
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\ChromeDriverNew\\chromedriver.exe");

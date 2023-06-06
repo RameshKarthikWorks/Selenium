@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [MarathonSuite]" verbose="2">
+  <test thread-count="5" name="Marathontest(failed)" verbose="2">
+    <classes>
+      <class name="marathonTestCase.AbhiBusBuyTicketTestCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="AbhiBusTicketProcess"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- marathonTestCase.AbhiBusBuyTicketTestCase -->
+    </classes>
+  </test> <!-- Marathontest(failed) -->
+  <test thread-count="5" name="Amazontest(failed)" verbose="2">
+    <classes>
+      <class name="marathonTestCase.AmazonTestCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="amazonTest"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- marathonTestCase.AmazonTestCase -->
+    </classes>
+  </test> <!-- Amazontest(failed) -->
   <test thread-count="5" name="PVRTest(failed)" verbose="2">
     <classes>
       <class name="marathonTestCase.PVRCinemasTestCase">

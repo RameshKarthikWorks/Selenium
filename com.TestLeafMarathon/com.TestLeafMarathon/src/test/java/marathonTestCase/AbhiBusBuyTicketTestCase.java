@@ -7,13 +7,15 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import ObjectsPackage.AbhiBusObjects;
 import mainClassPackage.BaseClass;
 
 public class AbhiBusBuyTicketTestCase extends BaseClass{
 	
 	
-	@Test(priority = 3)
+	@Test(priority = 1)
 	public void AbhiBusTicketProcess() throws InterruptedException
 	{
 		 BuyTicket();
@@ -80,11 +82,16 @@ public class AbhiBusBuyTicketTestCase extends BaseClass{
 		
 		dropping.selectByIndex(4);
 		
+		String Org ="Chennai to Bangalore Bus Tickets at Abhibus.com";
+		
 		String title = driver.getTitle();
 		
 		System.out.println(title);
-		
+	
+
 		driver.get(properties.getProperty("url2"));
+		
+
 		
 
 	}
